@@ -3,6 +3,6 @@
 public enum SortFieldType
     {
     Id=0,
-    Year=2
+    Year=1
     }
 }

@@ -9,14 +9,14 @@ namespace Harrison.Inventory.Data.Model
       public class FinancialYears
     {
     #region //public properties
-        public int FinancialYearId{get;set;}
-        public string FinancialYear { get; set; }   
+        public int FIN_YEAR_ID { get; set; }
+        public string FIN_YEAR_NAME { get; set; }   
     #endregion
     #region //Constructors
 public FinancialYears(int FinancialYearId,string FinancialYear)
 {
-    this.FinancialYearId=FinancialYearId;
-    this.FinancialYear=FinancialYear;
+    this.FIN_YEAR_ID = FIN_YEAR_ID;
+    this.FIN_YEAR_NAME = FIN_YEAR_NAME;
 }    
     #endregion
     }

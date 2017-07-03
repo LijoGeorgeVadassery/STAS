@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using  Harrison.Inventory.Data.Model;
 using Harrison.Inventory.Data.SqlClient;
+using System.Data;
 namespace Harrison.Inventory.Service
 {
     public class FinancialYearsService:IFinancialYearsService
@@ -13,20 +14,22 @@ namespace Harrison.Inventory.Service
         {
             _iFinancialYearsDAL = iFinancialYearsDAL;
         }
-        public List<FinancialYears>GetAllFinancialYears(SortType sortType, SortFieldType sortFieldType)
+        public DataTable GetAllFinancialYears(SortType sortType, SortFieldType sortFieldType)
         {
-            List<FinancialYears> financialYears = _iFinancialYearsDAL.GetAllFinancialYears();
+            DataTable financialYears = _iFinancialYearsDAL.GetAllFinancialYears();
 
+          
             if (sortType == SortType.Ascending)
-            {
-                financialYears = financialYears.OrderBy(p => p.FinancialYearId).ToList();
+           {
+               
+           // financialYears = financialYears.OrderBy(p => p.FIN_YEAR_ID).ToList();
             }
-            else
-            {
-                financialYears = financialYears.OrderByDescending(p => p.FinancialYearId).ToList();
-            }
-
+           else
+           {
+           //    financialYears = financialYears.OrderByDescending(p => p.FIN_YEAR_ID).ToList();
+           }
             return financialYears;
+            
         }
     }
    

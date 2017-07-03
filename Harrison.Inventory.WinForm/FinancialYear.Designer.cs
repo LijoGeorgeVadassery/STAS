@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.FinYear_Text = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Add_Fin_Year_Bttn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -37,12 +37,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.FinancialYear_Grid)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // FinYear_Text
             // 
-            this.textBox1.Location = new System.Drawing.Point(120, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(171, 20);
-            this.textBox1.TabIndex = 0;
+            this.FinYear_Text.Location = new System.Drawing.Point(120, 33);
+            this.FinYear_Text.Name = "FinYear_Text";
+            this.FinYear_Text.Size = new System.Drawing.Size(171, 20);
+            this.FinYear_Text.TabIndex = 0;
             // 
             // label1
             // 
@@ -99,7 +99,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.Add_Fin_Year_Bttn);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.FinYear_Text);
             this.Name = "FinancialYear";
             this.Text = "FinancialYear";
             this.Load += new System.EventHandler(this.FinancialYear_Load);
@@ -111,7 +111,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox FinYear_Text;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Add_Fin_Year_Bttn;
         private System.Windows.Forms.Button button2;

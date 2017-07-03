@@ -38,15 +38,15 @@ namespace Harrison.Inventory.WinForm
             get;
             set;
         }
-        public void OrderFinancialYearbyFieldAndDirection(List<Harrison.Inventory.Data.Model.FinancialYears> financialYears)
+        public void OrderFinancialYearbyFieldAndDirection(DataTable financialYears)
         {
-          //  dgvStocks.DataSource = stocks;
+         
             FinancialYear_Grid.DataSource = financialYears;
         }
 
         private void Add_Fin_Year_Bttn_Click(object sender, EventArgs e)
         {
-
+            //FinYear_Text.Text;
         }
 
         private void FinancialYear_Load(object sender, EventArgs e)
